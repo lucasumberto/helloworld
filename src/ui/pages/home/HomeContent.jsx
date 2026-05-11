@@ -1,13 +1,9 @@
 import reactLogo from '../../../assets/react.svg'
 import viteLogo from '../../../assets/vite.svg'
 import heroImg from '../../../assets/hero.png'
-import './App.css'
+import './Home.css'
 
-import Counter from '../../components/home/Counter'
-import { CounterProvider } from '../../../context/CounterContext'
-import Navbar from '../../components/shared/Navbar.jsx'
-
-function AppContent() {
+function HomeContent() {
 
   const user = {
     name: "Lucas",
@@ -17,8 +13,6 @@ function AppContent() {
 
   return (
     <>
-      <Navbar />
-      
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -28,11 +22,6 @@ function AppContent() {
         <div>
           <h1>Olá {user.name}</h1>
         </div>
-
-        {/*exemplo de uso do Context API*/}
-        <CounterProvider>
-          <Counter/>
-        </CounterProvider>
 
       </section>
 
@@ -125,4 +114,4 @@ function AppContent() {
   )
 }
 
-export default AppContent
+export default HomeContent

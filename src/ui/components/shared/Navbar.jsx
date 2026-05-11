@@ -10,8 +10,9 @@ function Navbar() {
       display: 'flex',
       gap: '15px'
     }}>
-      <Link to="/" style={{ textDecoration: 'none', color: '#333' }}>Home</Link>
-      <Link to="/about" style={{ textDecoration: 'none', color: '#333' }}>Sobre</Link>
+        <Link to="/" style={{ textDecoration: 'none', color: '#333' }}>Home</Link>
+        <Link to="/contador" style={{ textDecoration: 'none', color: '#333' }}>Contador</Link>
+        <Link to="/about" style={{ textDecoration: 'none', color: '#333' }}>Sobre</Link>
     </nav>
   )
 }
