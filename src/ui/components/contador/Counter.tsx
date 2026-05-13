@@ -1,4 +1,4 @@
-import {useCounter} from "../../../context/CounterContext.jsx";
+import { useCounter } from '../../../hooks/contador/useCounter.ts'
 import './Counter.css';
 
 function Counter() {

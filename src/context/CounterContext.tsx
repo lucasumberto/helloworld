@@ -1,8 +1,7 @@
-import { createContext, useContext, useState } from 'react'
+import { ReactNode, useState } from 'react'
+import { CounterContext } from './CounterContext.types'
 
-const CounterContext = createContext()
-
-export function CounterProvider({ children }) {
+export function CounterProvider({ children }: { children: ReactNode }) {
   const [count, setCount] = useState(0)
 
   const increment = () => {
@@ -22,12 +21,4 @@ export function CounterProvider({ children }) {
       {children}
     </CounterContext.Provider>
   )
-}
-
-export function useCounter() {
-  const context = useContext(CounterContext)
-  if (!context) {
-    throw new Error('useCounter must be used within a CounterProvider')
-  }
-  return context
 }

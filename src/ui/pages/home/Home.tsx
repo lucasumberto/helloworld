@@ -1,4 +1,4 @@
-import HomeContent from './HomeContent.jsx'
+import HomeContent from './HomeContent.tsx'
 
 function Home() {
   return (

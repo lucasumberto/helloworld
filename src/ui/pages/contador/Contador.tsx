@@ -1,6 +1,6 @@
 import React from 'react'
-import {CounterProvider} from "../../../context/CounterContext.jsx";
-import Counter from "../../components/contador/Counter.jsx";
+import {CounterProvider} from "../../../context/CounterContext.tsx";
+import Counter from "../../components/contador/Counter.tsx";
 
 function Contador() {
 
