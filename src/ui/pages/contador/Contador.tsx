@@ -1,4 +1,3 @@
-import React from 'react'
 import {CounterProvider} from "../../../context/CounterContext.tsx";
 import Counter from "../../components/contador/Counter.tsx";
 
