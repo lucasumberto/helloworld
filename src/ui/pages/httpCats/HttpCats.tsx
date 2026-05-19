@@ -20,7 +20,7 @@ function HttpCats() {
 
     return (
         <>
-            <h1>HTTP CATS</h1>
+            <div className="hw-httpCats__title">HTTP CATS</div>
             <div className="hw-httpCats__cards">
                 {allHttpCodes.map((code) => (
                     <HttpCatsCard key={code} httpCode={code} />
