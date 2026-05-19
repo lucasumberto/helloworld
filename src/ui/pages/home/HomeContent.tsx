@@ -20,7 +20,7 @@ function HomeContent() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Olá {user.name}</h1>
+          <h1 className="hw-home__title">Olá {user.name}</h1>
         </div>
       </section>
 
